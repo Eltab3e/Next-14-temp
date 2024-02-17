@@ -15,7 +15,6 @@ import {
 export default function Form({ customers }: { customers: CustomerField[] }) {
   const initialState = { message: null, errors: {} };
   const [state, dispatch] = useFormState(createInvoice, initialState);
-  console.log(state);
 
   return (
     <form action={dispatch}>

@@ -1,11 +1,11 @@
 'use server';
 
-import { z } from 'zod';
-import { signIn } from '@/auth';
 import { AuthError } from 'next-auth';
-import { sql } from '@vercel/postgres';
 import { redirect } from 'next/navigation';
 import { revalidatePath } from 'next/cache';
+import { z } from 'zod';
+import { signIn } from '@/auth';
+import { sql } from '@vercel/postgres';
 
 export async function authenticate(
   prevState: string | undefined,

@@ -1,7 +1,7 @@
-import clsx from 'clsx';
 import Image from 'next/image';
-import { lusitana } from '@/app/ui/fonts';
+import clsx from 'clsx';
 import { fetchLatestInvoices } from '@/app/lib/data';
+import { lusitana } from '@/app/ui/fonts';
 import { ArrowPathIcon } from '@heroicons/react/24/outline';
 
 export default async function LatestInvoices() {
